@@ -8,3 +8,7 @@ Turnip times operations, keeping average times within a timer. Useful for perfor
 
 The observant reader will note that :eggplant: is not a turnip. Unnforuntely there is no turnip emoji, so I did my best.
 
+## Inspiration
+
+This was written because I was tired of rewriting rolling averages everywhere.
+
