@@ -6,7 +6,7 @@ import (
 )
 
 func TestStartStop(t *testing.T) {
-	timer := NewTimer()
+	timer := NewTurnip()
 
 	for i := 0; i < 100; i++ {
 		timer.Start()

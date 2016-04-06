@@ -6,7 +6,7 @@ const (
 	defaultName = "deafult"
 )
 
-type Timer struct {
+type Turnip struct {
 	start time.Time
 
 	times []time.Duration
@@ -16,12 +16,12 @@ type Timer struct {
 }
 
 // Start a timer
-func (t *Timer) Start() {
+func (t *Turnip) Start() {
 	t.start = time.Now()
 }
 
 // Stop a timer, and update stats
-func (t *Timer) Stop() {
+func (t *Turnip) Stop() {
 	dur := time.Since(t.start)
 
 	t.times = append(t.times, dur)
@@ -32,15 +32,15 @@ func (t *Timer) Stop() {
 }
 
 // Get the average timer duration in Milliseconds
-func (t *Timer) AverageMs() float64 {
+func (t *Turnip) AverageMs() float64 {
 	ms := t.avg / (float64(time.Millisecond))
 
 	return ms
 }
 
 // Create a new timer
-func NewTimer() *Timer {
-	t := &Timer{
+func NewTurnip() *Turnip {
+	t := &Turnip{
 		times: make([]time.Duration, 0),
 		count: 0,
 	}
